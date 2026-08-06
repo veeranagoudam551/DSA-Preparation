@@ -1,0 +1,13 @@
+def rotate_array(arr):
+    n=len(arr)
+    temp=arr[0]
+    for i in range(1,n):
+        arr[i-1]=arr[i]
+    arr[n-1]=temp
+    return arr
+
+arr=[10,20,30,40,50,60]
+k = int(input("Enter the number of rotations: "))
+for i in range(k):
+    rotate_array(arr)
+print(arr)
